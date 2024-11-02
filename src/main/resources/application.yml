@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: priceService
+  datasource:
+    url: jdbc:h2:mem:testdb
+    driver-class-name: org.h2.Driver
+    username: admin
+    password: admin
+  h2:
+    console:
+      enabled: true  # Activa la consola web de H2
+  jpa:
+    hibernate:
+      ddl-auto: update  # Crea y actualiza la base de datos en cada arranque según las entidades
+    show-sql: true  # Muestra las consultas SQL en la consola
+    properties:
+      hibernate:
+        format_sql: true  # Formatea la salida SQL en la consola
+  sql:
+    init:
+      mode: always  # Permite la ejecución de data.sql al iniciar la aplicacion
+
+# Configuración para el servidor (opcional)
+server:
+  port: 8091  # Cambia al puerto en el que quieres que se ejecute la aplicacion
