@@ -10,8 +10,6 @@ Puede lanzar los comandos mas abajo descritos para ejecutar la app como contened
 ### Documentacion de referencia
 Version de Java: 23
 Version de Spring Boot: 3.3.5
-Version de GraalVM: 22.3
-
 
 Leer HELP.md para mas informacion.
 
